@@ -1,3 +1,5 @@
+.DS_Store
+.env
 cosign.key
 cosign.private
 /Containerfile
