@@ -32,6 +32,7 @@ modules:
         repo:
           title: Flathub (system)
         install: # system flatpaks we want all users to have and not remove
+          - io.github.Qalculate
           - org.libreoffice.LibreOffice
           - org.mozilla.firefox
           - org.virt_manager.virt-manager
