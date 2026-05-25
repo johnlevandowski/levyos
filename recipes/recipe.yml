@@ -46,6 +46,7 @@ modules:
 #        - atim/starship
     install:
       packages:
+        - 7zip
         - podman-compose
         - rclone
         - virt-install
