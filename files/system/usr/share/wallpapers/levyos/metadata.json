@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "john@example.com",
+                "Name": "John Levandowski"
+            }
+        ],
+        "Id": "levyos",
+        "License": "CC-BY-SA-4.0",
+        "Name": "levyOS"
+    }
+}
