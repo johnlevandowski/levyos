@@ -23,6 +23,7 @@ modules:
     validate: true
     install: true
     include:
+      - levyos-setup-reboot-to-windows.just
       - levyos-setup-virtualization.just
 
   - type: default-flatpaks
