@@ -1,4 +1,4 @@
-# BlueBuild Template &nbsp; [![build levyOS](https://github.com/johnlevandowski/levyOS/actions/workflows/build.yml/badge.svg)](https://github.com/johnlevandowski/levyOS/actions/workflows/build.yml) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/johnlevandowski/levyOS)
+# BlueBuild Template &nbsp; [![build levyos](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml/badge.svg)](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/johnlevandowski/levyos)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
@@ -10,7 +10,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/johnlevandowski/levyOS:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/johnlevandowski/levyos:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -18,7 +18,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/johnlevandowski/levyOS:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/johnlevandowski/levyos:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -43,7 +43,7 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```
-cosign verify --key cosign.pub ghcr.io/johnlevandowski/levyOS
+cosign verify --key cosign.pub ghcr.io/johnlevandowski/levyos
 ```
 
 Base Image Ancestry  
