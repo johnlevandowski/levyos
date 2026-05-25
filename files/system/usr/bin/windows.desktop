@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Restart to Windows
+Comment=Restart to Windows via UEFI
+Exec=/usr/bin/dev.johnl.windows.sh
+Icon=system-reboot
+Terminal=false
+Type=Application
+Categories=System;
