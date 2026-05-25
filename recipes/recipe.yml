@@ -36,7 +36,6 @@ modules:
           - io.github.Qalculate
           - org.libreoffice.LibreOffice
           - org.mozilla.firefox
-          - org.virt_manager.virt-manager
 #      - scope: user # Also add Flathub user repo, but no user packages
 #        repo:
           # you can override the title to make inclusion of both system and user repos clearer
@@ -52,6 +51,7 @@ modules:
         - podman-compose
         - rclone
         - virt-install
+        - virt-manager
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
         - qemu-kvm
