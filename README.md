@@ -1,4 +1,4 @@
-# BlueBuild Template &nbsp; [![build levyos](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml/badge.svg)](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/johnlevandowski/levyos)
+# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml/badge.svg)](https://github.com/johnlevandowski/levyos/actions/workflows/build.yml) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/johnlevandowski/levyos)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
@@ -10,6 +10,8 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
+  rpm-ostree status
+  sudo ostree admin pin 0
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/johnlevandowski/levyos:latest
   ```
 - Reboot to complete the rebase:
@@ -24,7 +26,11 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
-
+- Unset pin after testing
+  ```
+  sudo ostree admin pin 1 -u
+  ```
+  
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
 ## Enable Virtualization
