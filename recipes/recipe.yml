@@ -48,6 +48,8 @@ modules:
     install:
       packages:
         - 7zip
+        - alacritty
+        - fish
         - podman-compose
         - rclone
         - virt-install
