@@ -50,10 +50,10 @@ modules:
         - 7zip
         - alacritty
         - eza
+        - fastfetch
         - fish
         - podman-compose
         - rclone
-        - util-linux
         - virt-install
         - virt-manager
         - libvirt-daemon-config-network
