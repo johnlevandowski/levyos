@@ -49,9 +49,11 @@ modules:
       packages:
         - 7zip
         - alacritty
+        - eza
         - fish
         - podman-compose
         - rclone
+        - util-linux
         - virt-install
         - virt-manager
         - libvirt-daemon-config-network
