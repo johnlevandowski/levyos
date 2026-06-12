@@ -50,9 +50,11 @@ modules:
         - 7zip
         - alacritty
         - cascadia-code-nf-fonts
+        - du-dust
         - eza
         - fastfetch
         - fish
+        - gh
         - podman-compose
         - rclone
         - virt-install
