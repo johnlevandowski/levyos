@@ -33,7 +33,10 @@ modules:
         repo:
           title: Flathub (system)
         install: # system flatpaks we want all users to have and not remove
+          - io.github.pol_rivero.github-desktop-plus
           - io.github.Qalculate
+          - org.gimp.GIMP
+          - org.gnucash.GnuCash
           - org.libreoffice.LibreOffice
           - org.mozilla.firefox
 #      - scope: user # Also add Flathub user repo, but no user packages
